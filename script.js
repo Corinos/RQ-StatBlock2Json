@@ -173,9 +173,13 @@ function getRansom(inputArray){
   let startIndex = inputArray.findIndex(function(item){
     return item.indexOf('Ransom')!==-1;
   });
+  if(startIndex!=-1){
   let ransomString = inputArray[startIndex];
   let ransom = ransomString.replace('Ransom: ','');
   return ransom;
+  }else{
+  return 0
+  }
 }
 
     
