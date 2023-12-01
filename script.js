@@ -147,7 +147,7 @@ function split(inputArray,startSection,endSection) {
   let i = startIndex;
   let splitString = '';
   if(endIndex===-1){
-    splitString = inputArray[0];
+    splitString = inputArray[startIndex];
   }else{
     while(i<endIndex){
       splitString = splitString + inputArray[i];
